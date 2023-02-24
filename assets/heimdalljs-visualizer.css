@@ -1,0 +1,136 @@
+body {
+  margin-top: 3.5rem;
+  height: calc(100% - 3.55rem);
+}
+
+html,
+body > [class="ember-view"],
+.flame-graph {
+  height: 100%;
+}
+
+.d3-tip {
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+}
+
+.global-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.upload-data-banner {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.selected-node-controls {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+
+.node text {
+  font: 10px sans-serif;
+}
+
+.nodetitle {
+  fill: white;
+  font-weight: bold !important;
+}
+
+.link {
+  fill: none;
+  stroke: #555;
+  stroke-opacity: 0.4;
+  stroke-width: 1.5px;
+}
+
+.svg-container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: top;
+  overflow: hidden;
+  cursor: move;
+}
+
+.svg-content {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nodes-controls {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.nodes-controls select {
+  font-size: 1rem;
+}
+
+.nodes-table {
+    width:100%;
+    table-layout: fixed;
+}
+
+.nodes-table_header tr:hover {
+  background-color: initial;
+}
+
+.nodes-table_toggle {
+  color: inherit;
+}
+
+.nodes-table th:nth-child(1) {
+  text-align: left;
+  width: 60%;
+}
+.nodes-table th:nth-child(2) {
+  text-align: left;
+  width: 30%;
+}
+.nodes-table th:nth-child(3) {
+  text-align: right;
+  width: 10%;
+}
+
+.table-row:hover {
+  cursor: pointer;
+}
+
+.td-time {
+  text-align: right;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+.nodes-table thead th,
+.nodes-table tfoot td {
+  font-weight: bold;
+}
+
+.drop-zone {
+  display: flex;
+  margin: 0 20px;
+  width: 100%;
+}
+
+.drop-zone > .content {
+  display: flex;
+  border: 2px dashed gray;
+  width: 100%;
+  min-height: 300px;
+  align-items: center;
+  padding: 20px;
+}
+
+.drop-zone.drop-zone--dropping {
+  background-color: #eee;
+}
